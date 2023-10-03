@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:orientation="vertical"
+         android:gravity="center_horizontal"
+         android:id="@+id/linearLayout1"
+         >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/imageView1"
+    android:src="@drawable/rock"
+    />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="A te választásod"
+             android:textSize="25sp"
+             android:layout_centerHorizontal="true"
+
+             android:layout_below="@id/imageView1"
+             android:id="@+id/textView1"
+             />
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:id="@+id/imageView2"
+             android:layout_below="@id/textView1"
+             android:src="@drawable/rock"
+             />
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="A gép választása"
+             android:textSize="25sp"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@id/imageView2"
+             />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/linearLayout1"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:id="@+id/linearLayout2"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eredmény:"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ember: 0"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewHuman"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Computer: 0"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textViewComputer"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kő"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonko"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Papír"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonpapir"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olló"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonollo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
